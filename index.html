@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adélékè</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <nav id="lg-nav">
+      <div class="logo">Adélékè</div>
+      <div>
+        <ul class="nav-link">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#project">Project</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Hamburger menu -->
+    <nav id="sm-nav">
+      <div class="logo">Adélékè</div>
+      <div class="sm-menu">
+        <div class="sm-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-link">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#project" onclick="toggleMenu()">Project</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <!-- Hero-Sectiom -->
+    <section id="profile">
+      <div class="p_pic">
+        <img src="/Portfolio/images/IMG-20210628-WA0065.jpg" alt="Adélékè's picture" />
+      </div>
+      <div class="text">
+        <p class="text_1">Hello, I'm</p>
+        <h1 class="title">Adélékè Peter</h1>
+        <p class="text_2">Frontend Developer</p>
+        <div class="btn_container">
+          <button class="btn btn_2" type="button" onclick="window.open('')">
+            Download CV
+          </button>
+          <button
+            class="btn btn_1"
+            type="button"
+            onclick="location.href='./#contact'"
+          >
+            Contact Info
+          </button>
+        </div> <br>
+        <div id="social_container">
+            <img src="/Portfolio/images/github.png" alt="My github" class="icon" onclick="location.href='https://github.com/Hadehwahle?tab=repositories'" >
+            <img src="/Portfolio/images/twitter.png" alt="My Twitter profile" class="icon" onclick="location.href='https://twitter.com/Hadeh_wahle'">
+
+            <img src="/Portfolio/images/linkedin-logo.png" alt="My LinkedIn Profile" class="icon" onclick="location.href='https://www.linkedin.com/in/adeleke-peter-a40049249/'">
+            
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <p class="text_1">Get to know more</p>
+        <h1 class="title">About me</h1>
+        <div class="pro_pic">
+            <img src="/Portfolio/images/IMG-20210628-WA0058-removebg-preview.png" alt="Profile picture">
+        </div>
+        <div class="about_dettails_container">
+            <div class="about_container">
+                <div class="detailes_container"><i class="fa-solid fa-certificate"></i>
+                    <i class="fa-solid fa-certificate"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>
