@@ -29,3 +29,13 @@ window.onscroll = function () {
   }
   prevScrollpos = currentScrollPos;
 };
+
+
+function toggleExplore() {
+  let p = document.getElementById("explore_me");
+  if (p.style.display === "block") {
+    p.style.display = "none";
+  } else {
+    p.style.display = "block";
+  }
+}
