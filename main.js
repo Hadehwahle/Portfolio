@@ -24,8 +24,8 @@ window.onscroll = function () {
     document.getElementById("sm-nav").style.top = "-125px";
     document.getElementById("lg-nav").style.backgroundColor = " #e0dfdf";
     document.getElementById("sm-nav").style.backgroundColor = " #e0dfdf";
-    document.getElementById("lg-nav").style.boxShadow = "0px 0px 10px 1px #000";
-    document.getElementById("sm-nav").style.boxShadow = "0px 0px 10px 1px #000";
+    document.getElementById("lg-nav").style.boxShadow = "0px 0px 3px #000";
+    document.getElementById("sm-nav").style.boxShadow = "0px 0px 3px #000";
   }
   prevScrollpos = currentScrollPos;
 };
