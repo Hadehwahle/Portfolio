@@ -31,7 +31,6 @@ nav {
   top: 0;
   width: 100%;
   z-index: 99;
-  box-shadow: 0px 0px 1px 1px #000;
 }
 .nav-link {
   gap: 2rem !important;
@@ -129,12 +128,12 @@ a:hover {
 
 /* First section */
 section {
-  padding-bottom: 4vh;
+  padding-block: 4vh;
   height: 90vh;
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
-}
+  }
 .social_container {
   display: flex;
   justify-content: center;
@@ -292,8 +291,7 @@ section {
 .details_container {
   padding: 1.5rem;
   flex: 1;
-  border: 0.1rem solid #353535;
-  border-color: #a3a3a3;
+  border: 0.1rem solid #a3a3a3;
   border-radius: 2rem;
   text-align: center;
   cursor: default;
@@ -426,8 +424,51 @@ article {
   border-color: #a3a3a3;
   border-radius: 2rem;
 }
+.details_ {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1.5rem;
+  border: 0.1rem solid #353535;
+  border-color: #a3a3a3;
+  border-radius: 2rem;
+  text-align: center;
+  cursor: default;
+  margin-top: 100px;
+}
+.cont{
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+  transition: all 0.3s ease-in-out;
+}
+.cont:hover{
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: #b5b5b5;
+}
+#contact{
+height: 70vh;
+}
+footer{
+  height: 26vh;
+  margin:0 1rem;
+}
+footer p{
+  text-align: center;
+}
+@media (max-with: 1400px) {
+  #profile{
+    height: 83vh;
+    margin-bottom: 6rem;
+  }
+  .about_container{
+    flex-wrap: wrap;
+  }
+}
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   #lg-nav {
     display: none !important;
   }
@@ -440,3 +481,4 @@ article {
     display: none !important;
   }
 }
+@media
