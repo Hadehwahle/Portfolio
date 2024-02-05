@@ -10,6 +10,7 @@ body {
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
   background-color: #e0dfdf !important;
+  overflow-x: hidden;
 }
 p {
   color: #555;
@@ -20,8 +21,8 @@ a,
 }
 /* Nav */
 nav,
-.nav-link {
-  display: flex !important;
+.nav_link {
+  display: flex;
 }
 nav {
   justify-content: space-around;
@@ -31,11 +32,12 @@ nav {
   top: 0;
   width: 100%;
   z-index: 99;
+  transition:  top 0.3s;
 }
-.nav-link {
-  gap: 2rem !important;
-  list-style: none !important;
-  font-size: 1.5rem !important;
+.nav_link {
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
 }
 a {
   color: #000 !important;
@@ -133,7 +135,7 @@ section {
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
-  }
+}
 .social_container {
   display: flex;
   justify-content: center;
@@ -184,7 +186,7 @@ section {
 .icon:hover {
   transform: scale(1.2);
 }
-.icon:active { 
+.icon:active {
   transform: scale(0.9);
 }
 
@@ -305,18 +307,6 @@ section {
   width: 350px;
   object-fit: contain;
 }
-.experience-sub-title {
-  color: #555;
-  font-weight: 600;
-  font-size: 1.75rem;
-  margin-bottom: 2rem;
-}
-.experience_details_container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin-block: 4rem;
-}
 .article-container {
   display: flex;
   flex-wrap: wrap;
@@ -435,50 +425,169 @@ article {
   border-radius: 2rem;
   text-align: center;
   cursor: default;
-  margin-top: 100px;
+  margin-top: 60px;
 }
-.cont{
+.cont {
   cursor: pointer;
   text-decoration: none;
   color: #000;
   transition: all 0.3s ease-in-out;
 }
-.cont:hover{
+.cont:hover {
   text-decoration: underline;
   text-underline-offset: 1rem;
   text-decoration-color: #b5b5b5;
 }
-#contact{
-height: 70vh;
+#contact {
+  height: 50vh;
 }
-footer{
+footer {
   height: 26vh;
-  margin:0 1rem;
+  margin: 0 1rem;
 }
-footer p{
+footer p {
   text-align: center;
 }
-@media (max-with: 1400px) {
-  #profile{
+
+@media (max-width: 1400px) {
+  #profile {
     height: 83vh;
-    margin-bottom: 6rem;
   }
-  .about_container{
+  #sm-nav {
+    display: none;
+  }
+  .about_container {
     flex-wrap: wrap;
+  }
+  .about_me_content {
+    margin: 0 auto;
   }
 }
 
 @media (max-width: 1200px) {
   #lg-nav {
-    display: none !important;
+    display: none;
   }
   #sm-nav {
     display: flex;
   }
-}
-@media (min-width: 1001px) {
-  #sm-nav {
-    display: none !important;
+  #profile {
+    display: block;
+    height: auto;
+  }
+  section {
+    margin: 0.5%;
+  }
+  .p_pic {
+    padding-top: 4rem;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+  }
+  .text {
+    padding-top: 6rem;
+  }
+  .p_pic img {
+    border-radius: 50%;
+    width: 100%;
+  }
+  .about_container {
+    margin-top: 0;
   }
 }
-@media
+
+@media (max-width: 600px) {
+  #contact,
+  footer {
+    height: 40vh;
+  }
+  .nav_link {
+    padding-left: 0px;
+  }
+  section {
+    padding-block: 0px;
+  }
+  #profile {
+    height: auto;
+    margin-top: 0;
+  }
+  article {
+    font-size: 1rem;
+  }
+  footer > nav {
+    height: fit-content;
+    margin-bottom: 2rem;
+  }
+  .about_container,
+  .details_,
+  .butn_container {
+    flex-wrap: wrap;
+  }
+  .details_ {
+    margin: 0;
+  }
+  .details_ p,
+  .nav-link li a {
+    font-size: 1rem;
+  }
+  .logo {
+    width: 1.5rem;
+  }
+  nav {
+    justify-content: space-between;
+    height: 15vh;
+  }
+  .sm-icon {
+    margin: 0 3rem;
+  }
+  .nav_link {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+  }
+  .p_pic {
+    width: auto;
+    height: auto;
+    padding-top: 0px;
+    justify-content: center;
+  }
+  .details_container,
+  .details_,
+  .about_me,
+  .about_me_one,
+  .carousel {
+    margin: 2rem;
+  }
+  .p_pic img {
+    width: 80%;
+  }
+  .text_1,
+  p {
+    font-size: 1.25rem;
+  }
+  .title,
+  h1 {
+    font-size: 2rem;
+  }
+  .text_2,
+  h3 {
+    font-size: 1.5rem;
+  }
+  .about_me_content {
+    text-align: justify;
+    margin: 2rem;
+  }
+  .nav-links-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2rem;
+  }
+  .special{
+    padding-top: 2rem;
+  }
+  .text {
+    padding-top: 1rem;
+  }
+}
