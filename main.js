@@ -10,26 +10,21 @@ window.onscroll = function () {
 };
 
 let prevScrollpos = window.scrollY;
-window.onscroll = function () {
-  let currentScrollPos = window.scrollY;
+window.onscroll = function() {
+let currentScrollPos = window.scrollY;
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("lg-nav").style.top = "0";
     document.getElementById("sm-nav").style.top = "0";
-    document.getElementById("lg-nav").style.backgroundColor = " #e0dfdf";
-    document.getElementById("sm-nav").style.backgroundColor = " #e0dfdf";
     document.getElementById("lg-nav").style.boxShadow = "none";
     document.getElementById("sm-nav").style.boxShadow = "none";
   } else {
-    document.getElementById("lg-nav").style.top = "-125px";
-    document.getElementById("sm-nav").style.top = "-125px";
-    document.getElementById("lg-nav").style.backgroundColor = " #e0dfdf";
-    document.getElementById("sm-nav").style.backgroundColor = " #e0dfdf";
-    document.getElementById("lg-nav").style.boxShadow = "0px 0px 3px #000";
-    document.getElementById("sm-nav").style.boxShadow = "0px 0px 3px #000";
+    document.getElementById("lg-nav").style.top = "-50px";
+    document.getElementById("sm-nav").style.top = "-50px";
+    document.getElementById("lg-nav").style.boxShadow = "0px 0px 1px 5px #000";
+    document.getElementById("sm-nav").style.boxShadow = "0px 0px 1px 1px #000";
   }
   prevScrollpos = currentScrollPos;
-};
-
+}
 
 function toggleExplore() {
   let p = document.getElementById("explore_me");
