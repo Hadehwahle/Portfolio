@@ -5,9 +5,6 @@ function toggleMenu() {
   icon.classList.toggle("open");
 }
 
-window.onscroll = function () {
-  scrollFunction();
-};
 
 let prevScrollpos = window.scrollY;
 window.onscroll = function() {
@@ -18,10 +15,10 @@ let currentScrollPos = window.scrollY;
     document.getElementById("lg-nav").style.boxShadow = "none";
     document.getElementById("sm-nav").style.boxShadow = "none";
   } else {
-    document.getElementById("lg-nav").style.top = "-50px";
-    document.getElementById("sm-nav").style.top = "-50px";
-    document.getElementById("lg-nav").style.boxShadow = "0px 0px 1px 5px #000";
-    document.getElementById("sm-nav").style.boxShadow = "0px 0px 1px 1px #000";
+    document.getElementById("lg-nav").style.top = "-130px";
+    document.getElementById("sm-nav").style.top = "-130px";
+    document.getElementById("lg-nav").style.boxShadow = "0px 0px 1px #000";
+    document.getElementById("sm-nav").style.boxShadow = "0px 0px 1px #000";
   }
   prevScrollpos = currentScrollPos;
 }
