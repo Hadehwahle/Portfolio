@@ -24,15 +24,19 @@ nav,
 .nav_link {
   display: flex;
 }
-nav {
+#lg-nav, #sm-nav {
   justify-content: space-around;
   align-items: center;
-  height: 17vh;
-  position: sticky;
-  top: 0;
+  height: 15vh;
+  position: fixed;
   width: 100%;
   z-index: 99;
-  transition:  top 0.3s;
+  transition:  top 0.4s;
+  background-color: #e0dfdf;
+}
+nav{
+  justify-content: space-around;
+  align-items: center;
 }
 .nav_link {
   gap: 2rem;
@@ -144,6 +148,7 @@ section {
 }
 #profile {
   display: flex;
+  margin-top: 3rem;
   justify-content: center;
   gap: 5rem;
 }
@@ -448,10 +453,16 @@ footer {
 footer p {
   text-align: center;
 }
+nav {
+ text-align: center;
+}
 
+/* media query */
 @media (max-width: 1400px) {
   #profile {
-    height: 83vh;
+    height: 100vh;
+    box-sizing: border-box;
+
   }
   #sm-nav {
     display: none;
@@ -470,8 +481,11 @@ footer p {
   }
   #sm-nav {
     display: flex;
+    justify-content: space-between;
+    padding: 0 4rem 0 1rem;
   }
   #profile {
+    margin-top: 0;
     display: block;
     height: auto;
   }
@@ -479,13 +493,13 @@ footer p {
     margin: 0.5%;
   }
   .p_pic {
-    padding-top: 4rem;
+    padding-top: 12rem;
     width: 300px;
     height: 300px;
     margin: 0 auto;
   }
   .text {
-    padding-top: 6rem;
+    padding-top: 7rem;
   }
   .p_pic img {
     border-radius: 50%;
@@ -509,7 +523,7 @@ footer p {
   }
   #profile {
     height: auto;
-    margin-top: 0;
+    margin-top: 8.5rem;
   }
   article {
     font-size: 1rem;
@@ -533,7 +547,7 @@ footer p {
   .logo {
     width: 1.5rem;
   }
-  nav {
+  #sm-nav {
     justify-content: space-between;
     height: 15vh;
   }
@@ -546,7 +560,7 @@ footer p {
     gap: 0.5rem;
   }
   .p_pic {
-    width: auto;
+    width: 300px;
     height: auto;
     padding-top: 0px;
     justify-content: center;
