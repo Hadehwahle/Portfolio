@@ -551,9 +551,6 @@ nav {
     justify-content: space-between;
     height: 15vh;
   }
-  .sm-icon {
-    margin: 0 3rem;
-  }
   .nav_link {
     flex-direction: column;
     text-align: center;
