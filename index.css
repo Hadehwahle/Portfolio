@@ -33,7 +33,9 @@ nav,
   width: 100%;
   z-index: 99;
   transition: top 0.3s;
-  background-color: #e0dfdf;
+  background-image: linear-gradient(#fff, #e0dfdf , #fff, #e0dfdf, #fff, #e0dfdf, #fff, #e0dfdf, #fff, #e0dfdf, #fff, #e0dfdf, #fff, #e0dfdf);
+  border-bottom: 1px solid #b5b5b5;
+  box-shadow: 0px 0px 10px 5px #b5b5b5;
 }
 nav {
   justify-content: space-around;
@@ -338,16 +340,6 @@ article {
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
-.explore:hover {
-  background-color: #000;
-  color: #fff;
-}
-.explore:active {
-  transform: scale(0.9);
-}
-.fa-angles-down {
-  font-size: 14px;
-}
 .open_ {
   display: flex;
   justify-content: center;
@@ -434,16 +426,17 @@ article {
   cursor: default;
   margin-top: 60px;
 }
-.cont {
+.cont, .cont p {
   cursor: pointer;
   text-decoration: none;
   color: #000;
   transition: all 0.3s ease-in-out;
 }
-.cont:hover {
+.cont:hover, .cont p:hover {
   text-decoration: underline;
   text-underline-offset: 1rem;
   text-decoration-color: #b5b5b5;
+  color: #b5b5b5;
 }
 #contact {
   height: 50vh;
@@ -455,9 +448,7 @@ footer {
 footer p {
   text-align: center;
 }
-nav {
-  text-align: center;
-}
+
 
 /* media query */
 @media (max-width: 1400px) {
