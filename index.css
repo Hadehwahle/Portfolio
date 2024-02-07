@@ -218,24 +218,14 @@ section {
 .btn_2:active {
   transform: scale(0.9);
 }
-.btn_2:hover {
-  background-color: #000;
-  color: #fff;
-  border: 1px solid white;
-}
-.btn_1:hover {
+.btn_1:hover, .btn_2:hover {
   background-color: transparent;
   color: #000;
 }
-.btn_1 {
+.btn_1, .btn_2 {
   outline: none;
   color: #fff;
   background-color: #000;
-}
-.btn_2 {
-  background: none;
-  outline: none;
-  border: 0.1rem solid #000;
 }
 
 /* About section */
