@@ -434,6 +434,8 @@ footer {
 footer p {
   text-align: center;
 }
+
+/* Dark mode */
 body.dark {
   background-color: rgb(13, 21, 28);
   color: #fff;
@@ -455,6 +457,8 @@ body.dark .nav_link li a {
   bottom: 30px;
   left: 30px;
   z-index: 9;
+  background-color: #0d151c;
+  color: #fff;
 }
 #btn_one span {
   padding: 3px;
