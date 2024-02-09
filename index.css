@@ -520,6 +520,14 @@ body.dark .menu-link a {
   #lg-nav {
     display: none;
   }
+  .details_container,
+  .details_,
+  .about_me,
+  .about_me_content p,
+  .about_me_one,
+  .carousel {
+    margin: 2rem;
+  }
   #sm-nav {
     display: flex;
     justify-content: space-between;
@@ -565,7 +573,8 @@ body.dark .menu-link a {
     transform: scale(1);
   }
   footer {
-    height: auto;
+    height: 80px;
+    margin: auto 0;
   }
   .nav_link {
     padding-left: 0px;
@@ -580,17 +589,10 @@ body.dark .menu-link a {
   article {
     font-size: 1rem;
   }
-  footer > nav {
-    height: fit-content;
-    margin-bottom: 2rem;
-  }
   .about_container,
   .details_,
   .butn_container {
     flex-wrap: wrap;
-  }
-  .details_ {
-    margin: 0;
   }
   .details_ p,
   .nav-link li a {
@@ -614,13 +616,6 @@ body.dark .menu-link a {
     padding-top: 0px;
     justify-content: center;
   }
-  .details_container,
-  .details_,
-  .about_me,
-  .about_me_one,
-  .carousel {
-    margin: 2rem;
-  }
   .p_pic img {
     width: 80%;
   }
@@ -635,10 +630,6 @@ body.dark .menu-link a {
   .text_2,
   h3 {
     font-size: 1.5rem;
-  }
-  .about_me_content {
-    text-align: justify;
-    margin: 2rem;
   }
   .nav-links-container {
     display: flex;
