@@ -492,8 +492,8 @@ body.dark .nav_link li a {
   background-color: #0d151c;
   color: #fff;
 }
-#btn_one span {
-  padding: 3px;
+#btn_one i {
+  padding: 17px 8px;
 }
 body.dark .details_ .cont,
 body.dark .details_ .cont p {
