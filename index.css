@@ -603,7 +603,7 @@ body.dark .cont i{
     padding: 0 4rem 0 1rem;
   }
   #profile {
-    margin-top: 0;
+    margin-top: 2rem;
     display: block;
     height: auto;
   }
@@ -662,7 +662,7 @@ body.dark .cont i{
   }
   #profile {
     height: auto;
-    margin-top: 6rem;
+    margin-top: 8rem;
   }
   article {
     font-size: 1rem;
