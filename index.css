@@ -247,7 +247,7 @@ section {
   height: auto;
 }
 .about_me_one {
-  margin-block: 2rem;
+  margin-bottom: 2rem;
   padding: 1.5rem;
   gap: 2rem;
   border: 0.1rem solid #353535;
