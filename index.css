@@ -385,6 +385,7 @@ article {
   border-radius: 10px;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
+  margin-inline: 10px;
 }
 #project {
   height: auto;
