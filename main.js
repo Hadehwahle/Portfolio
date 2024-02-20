@@ -27,8 +27,8 @@ let currentScrollPos = window.scrollY;
     document.getElementById("lg-nav").style.top = "0";
     document.getElementById("sm-nav").style.top = "0";
   } else {
-    document.getElementById("lg-nav").style.top = "-130px";
-    document.getElementById("sm-nav").style.top = "-130px";
+    document.getElementById("lg-nav").style.top = "-100px";
+    document.getElementById("sm-nav").style.top = "-100px";
   }
   prevScrollpos = currentScrollPos;
 }
