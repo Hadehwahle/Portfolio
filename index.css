@@ -312,11 +312,10 @@ section {
   background-color: #fcfcfc;
   box-shadow: -4px 4px 4px rgba(206, 206, 206, 0.25),
     4px 4px 4px rgba(206, 206, 206, 0.25);
-  padding-block: 40px;
+  padding-top: 8px;
   border-radius: 10px;
-  margin-bottom: 40px;
   width: 100%;
-  height: 250px;
+  height: 230px;
 }
 .article-container,
 .sub-tools {
@@ -690,7 +689,7 @@ body.dark .cont i {
     flex-wrap: wrap;
   }
   .about_me_content p {
-    text-align: start;
+    text-align: center;
     line-height: 2.2rem;
   }
   .details_ p,
@@ -742,10 +741,6 @@ body.dark .cont i {
   }
   .text {
     padding-top: 1rem;
-  }
-  .about_me_content {
-    text-align: center;
-    margin-bottom: 0;
   }
   .menu-link {
     padding-inline: 80px;
