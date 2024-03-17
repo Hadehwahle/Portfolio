@@ -29,8 +29,7 @@ nav,
 .nav_link {
   display: flex;
 }
-#lg-nav,
-#sm-nav {
+#lg-nav {
   justify-content: space-around;
   align-items: center;
   height: 10vh;
@@ -39,8 +38,7 @@ nav,
   width: 100%;
   z-index: 99;
   transition: top 0.3s;
-  border-bottom: 1px solid #b5b5b5;
-  box-shadow: 0px 0px 10px 5px #b5b5b5;
+  box-shadow: 0px 0px 5px 1px #b5b5b5;
   transition: background, 0.5s ease-in-out;
 }
 nav {
@@ -98,7 +96,7 @@ a:hover {
 }
 .menu-link {
   position: absolute;
-  top: 100%;
+  top: 44px;
   right: 0;
   background-color: #fff;
   width: fit-content;
@@ -565,6 +563,22 @@ body.dark .tools {
 body.dark .cont i {
   color: #fff;
 }
+.bar {
+  display: none;
+  width: 20px;
+  padding: 0px !important;
+  margin: 0;
+  background-color: transparent;
+  border: none;
+}
+.bar i {
+  color: #000;
+  font-size: 1.8rem;
+  transition: all 0.3s ease-in-out;
+}
+.bar i:hover {
+  color: #00000063;
+}
 /* media query */
 @media (min-width: 0px) {
   h2 {
@@ -576,9 +590,6 @@ body.dark .cont i {
   #profile {
     height: 100vh;
     box-sizing: border-box;
-  }
-  #sm-nav {
-    display: none;
   }
   .about_container {
     flex-wrap: wrap;
@@ -593,9 +604,6 @@ body.dark .cont i {
 }
 
 @media (max-width: 1200px) {
-  #lg-nav {
-    display: none;
-  }
   .details_container,
   .details_,
   .about_me,
@@ -603,11 +611,6 @@ body.dark .cont i {
   .about_me_one,
   .project_container {
     margin: 0.5rem;
-  }
-  #sm-nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 4rem 0 1rem;
   }
   #profile {
     margin-top: 2rem;
@@ -657,6 +660,30 @@ body.dark .cont i {
     text-align: justify;
     line-height: 2rem;
   }
+  .bar {
+    display: flex;
+  }
+  .nav_link.show {
+    display: flex;
+  }
+  .nav_link {
+    position: absolute;
+    display: none;
+    width: 100%;
+    top: 65px;
+    left: 0;
+    justify-content: center;
+    background-color: #fff;
+    flex-direction: column;
+    align-items: center;
+    padding-block: 1rem;
+    box-shadow: none;
+  }
+  nav {
+    justify-content: space-between !important;
+    align-items: center;
+    padding-right: 2rem;
+  }
 }
 
 @media (max-width: 600px) {
@@ -699,10 +726,6 @@ body.dark .cont i {
   .logo {
     width: 1.5rem;
   }
-  #sm-nav {
-    justify-content: space-between;
-    height: 10vh;
-  }
   .nav_link {
     flex-direction: column;
     text-align: center;
@@ -741,9 +764,6 @@ body.dark .cont i {
   }
   .text {
     padding-top: 1rem;
-  }
-  .menu-link {
-    padding-inline: 80px;
   }
   .project_container {
     grid-template-columns: 100%;
