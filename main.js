@@ -3,17 +3,19 @@ const btn = document.getElementById("btn_one");
 const icon = document.getElementById("moon");
 function changeTheme() {
   body.classList.toggle("dark");
-  icon.classList.toggle("fa-sun");
   if (body.classList.contains("dark")) {
     btn.style.backgroundColor = "#fff";
     icon.style.color = "#0d151c";
+    icon.classList.remove("fa-moon");
+    icon.classList.add("fa-sun");
   } else {
     btn.style.backgroundColor = "#0d151c";
     icon.style.color = "#fff";
+    icon.classList.remove("fa-sun");
+    icon.classList.add("fa-moon");
   }
 }
 btn.addEventListener("click", changeTheme);
-
 let prevScrollpos = window.scrollY;
 window.onscroll = function () {
   let currentScrollPos = window.scrollY;
