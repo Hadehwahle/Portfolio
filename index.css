@@ -28,9 +28,9 @@ a,
 nav,
 .nav_link {
   display: flex;
+  transition: all 0.5s ease-in-out;
 }
 #lg-nav {
-  justify-content: space-around;
   align-items: center;
   height: 10vh;
   background-color: #fff;
@@ -42,8 +42,9 @@ nav,
   transition: background, 0.5s ease-in-out;
 }
 nav {
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  padding-right: 3rem;
 }
 .nav_link {
   gap: 2rem;
@@ -56,8 +57,10 @@ a {
   text-decoration-color: #e0dfdf !important;
 }
 .logo img {
-  width: 180px;
-  height: 70px;
+  position: relative;
+  left: -40px;
+  width: 280px;
+  height: 200px;
   object-fit: contain;
 }
 a:hover {
@@ -119,25 +122,6 @@ a:hover {
 }
 .menu-link.open {
   max-height: 300px;
-}
-
-.sm-icon.open span:first-child {
-  transform: rotate(45deg) translate(10px, 5px);
-}
-.sm-icon.open span:nth-child(2) {
-  opacity: 0;
-}
-.sm-icon.open span:last-child {
-  transform: rotate(-45deg) translate(10px, -5px);
-}
-.sm-icon span:first-child {
-  transform: none;
-}
-.sm-icon span:first-child {
-  opacity: 1;
-}
-.sm-icon span:first-child {
-  transform: none;
 }
 
 /* First section */
@@ -476,6 +460,7 @@ footer {
 }
 footer p {
   text-align: center;
+  padding-bottom: 1rem;
 }
 .my-contact {
   display: grid;
@@ -491,12 +476,18 @@ body.dark {
   background-color: rgb(13, 21, 28);
   color: #fff;
 }
-body.dark #sm-nav,
 body.dark #lg-nav {
   background-color: rgb(46, 54, 60);
   box-shadow: 0px 0px 10px 5px rgb(46, 54, 60);
 }
 body.dark .nav_link li a {
+  color: #fff !important;
+}
+body.dark .nav_link {
+  background-color: rgb(46, 54, 60);
+  color: #fff !important;
+}
+body.dark .fa-bars {
   color: #fff !important;
 }
 #btn_one {
@@ -570,6 +561,7 @@ body.dark .cont i {
   margin: 0;
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 .bar i {
   color: #000;
@@ -676,8 +668,9 @@ body.dark .cont i {
     background-color: #fff;
     flex-direction: column;
     align-items: center;
-    padding-block: 1rem;
+    padding-block: 1.5rem;
     box-shadow: none;
+    transition: all 0.5s ease;
   }
   nav {
     justify-content: space-between !important;
@@ -723,13 +716,18 @@ body.dark .cont i {
   .nav-link li a {
     font-size: 1rem;
   }
+  .logo img {
+    width: 200px;
+    height: 120px;
+    object-fit: contain;
+  }
   .logo {
     width: 1.5rem;
   }
   .nav_link {
     flex-direction: column;
     text-align: center;
-    gap: 0.5rem;
+    gap: 1.5rem;
   }
   .p_pic {
     width: 210px;
